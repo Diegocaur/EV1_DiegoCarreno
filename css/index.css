@@ -1,0 +1,5 @@
+.container,
+.container_principal {
+  display: flex;
+  flex-direction: colum;
+}
