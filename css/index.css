@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Karla", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   padding: 0%;
   margin: 0%;
@@ -14,21 +14,38 @@ body {
 
 /*------------------CABECERA----------------------------*/
 .cabecera {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aquamarine;
+  background-color: #80a4ed;
   padding-left: 1rem;
   padding-right: 1rem;
+  color: #395c6b;
 }
 
 .empresa,
 .opciones {
   display: flex;
+  align-items: center;
+}
+.logo {
 }
 
+.img_logo {
+  width: 50px;
+  height: 50px;
+  margin: 1rem;
+}
+
+.opciones {
+  padding-right: 2rem;
+}
 /*----------------------CUERPO-------------------------------*/
 .container_principal {
+  padding-top: 4rem;
 }
 
 .sector1 {
@@ -44,13 +61,17 @@ body {
   justify-content: center;
   padding-top: 5rem;
 }
+.titulos {
+  color: #395c6b;
+}
 
 .section1,
 .section2,
-.section3 {
+.section3,
+.section4 {
   display: flex;
   justify-content: center;
-  background-color: aquamarine;
+  background-color: #e6e1c5;
   color: white;
 }
 
@@ -99,6 +120,47 @@ body {
   border-radius: 50%;
 }
 
+.sector4 {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.servicio {
+  border: 5px;
+  box-shadow: 3px 3px 15px gray;
+  padding: 2rem;
+  border-radius: 5px;
+  margin: 1rem;
+}
+/*------------------CONTACTOS----------------------------*/
+.contactos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.redes {
+  display: flex;
+  margin-left: 2px;
+  gap: 5px;
+}
+
+.cont_img {
+  width: 20px;
+  height: 20px;
+}
+.cont_img:hover {
+  width: 30px;
+  height: 30px;
+}
 /*------------------PIE_DE_PAGINA----------------------------*/
+.inferior {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
 
 /*#CA0B0B*/
