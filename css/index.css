@@ -1,3 +1,16 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -31,8 +44,6 @@ body {
   display: flex;
   align-items: center;
 }
-.logo {
-}
 
 .img_logo {
   width: 50px;
@@ -50,16 +61,19 @@ body {
 
 .sector1 {
   display: flex;
+  padding: 3rem;
 }
 .img1 {
   width: 50%;
-  padding: 3rem;
+
   border-radius: 100%;
+  box-shadow: 3px 3px 6px gray;
 }
 .cuerpo1 {
   width: 30%;
   justify-content: center;
   padding-top: 5rem;
+  padding-left: 3rem;
 }
 .titulos {
   color: #395c6b;
@@ -68,6 +82,7 @@ body {
 .descripcion {
   color: #b6a21e;
   text-align: justify;
+  text-shadow: 3px 3px 20px gray;
 }
 
 .section1,
@@ -76,6 +91,7 @@ body {
 .section4 {
   display: flex;
   justify-content: center;
+  width: 100%;
   background-color: #e6e1c5;
   color: #80a4ed;
 }
@@ -99,8 +115,9 @@ body {
   gap: 100px;
 }
 .img2 {
-  padding: 2rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
+  box-shadow: 3px 3px 6px gray;
   width: 90%;
   border-radius: 30%;
   margin-right: 1rem;
@@ -119,6 +136,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 30%;
+
   border: 5px;
   box-shadow: 3px 3px 15px gray;
   padding: 2rem;
@@ -129,6 +147,8 @@ body {
 .datos {
   display: flex;
   align-items: center;
+  padding-bottom: 1rem;
+  justify-content: space-between;
 }
 
 .img_perfil {
@@ -159,13 +179,39 @@ body {
   padding-right: 8rem;
 }
 
-.servicio {
+.servicio1,
+.servicio2,
+.servicio3,
+.servicio4,
+.servicio5,
+.servicio6 {
   justify-content: center;
   border: 5px;
   box-shadow: 3px 3px 15px gray;
   padding: 2rem;
   border-radius: 5px;
   margin: 1rem;
+}
+
+.servicio1 {
+  border-top: 0.5rem solid var(--Cyan);
+}
+.servicio2 {
+  border-top: 0.5rem solid var(--Red);
+}
+
+.servicio3 {
+  border-top: 0.5rem solid var(--Orange);
+}
+
+.servicio4 {
+  border-top: 0.5rem solid var(--Blue);
+}
+.servicio5 {
+  border-top: 0.5rem solid var(--VeryDarkBlue);
+}
+.servicio6 {
+  border-top: 0.5rem solid var(--GrayishBlue);
 }
 
 /*------------------CONTACTOS----------------------------*/
@@ -197,3 +243,72 @@ body {
 }
 
 /*#CA0B0B*/
+@media screen and (max-width: 768px) {
+  .sector1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .img1 {
+    margin-top: 1rem;
+    width: 300px;
+  }
+
+  .cuerpo1 {
+    width: 400px;
+    padding: 1rem;
+  }
+
+  .sector2 {
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cuerpo2 {
+    width: 400px;
+    padding: 1rem;
+  }
+
+  .infraestructura {
+    justify-content: center;
+  }
+  .img2 {
+    width: 300px;
+  }
+
+  .sector3 {
+    flex-direction: column;
+  }
+
+  .persona1,
+  .persona2,
+  .persona3 {
+    width: 300px;
+  }
+
+  .sector4 {
+    flex-direction: column;
+  }
+  .servicio1,
+  .servicio2,
+  .servicio3,
+  .servicio4,
+  .servicio5,
+  .servicio6 {
+    width: 300px;
+  }
+
+  .contactos {
+    flex-direction: column;
+  }
+
+  .a_perfil {
+    margin-top: 1rem;
+  }
+
+  .inferior {
+    margin-top: 0%;
+    padding-top: 0%;
+  }
+}
