@@ -65,6 +65,11 @@ body {
   color: #395c6b;
 }
 
+.descripcion {
+  color: #d4cb92;
+  text-align: justify;
+}
+
 .section1,
 .section2,
 .section3,
@@ -72,7 +77,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #e6e1c5;
-  color: white;
+  color: #80a4ed;
 }
 
 .sector2 {
@@ -82,10 +87,21 @@ body {
   padding: 3rem;
   width: 50%;
 }
-.img2 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.infraestructura {
+  display: flex;
   width: 50%;
+  flex-direction: column;
+}
+.iconos_inf {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  gap: 100px;
+}
+.img2 {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  width: 90%;
   border-radius: 30%;
   margin-right: 1rem;
 }
@@ -116,8 +132,21 @@ body {
 }
 
 .img_perfil {
-  width: 30%;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
+}
+
+.perfil_vet {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.cargo_vet {
+  margin-top: 0%;
+  color: #395c6b;
 }
 
 .sector4 {
