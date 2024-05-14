@@ -66,7 +66,7 @@ body {
 }
 
 .descripcion {
-  color: #d4cb92;
+  color: #b6a21e;
   text-align: justify;
 }
 
@@ -151,6 +151,8 @@ body {
 
 .sector4 {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 3rem;
   padding-bottom: 2rem;
   padding-left: 8rem;
@@ -158,12 +160,14 @@ body {
 }
 
 .servicio {
+  justify-content: center;
   border: 5px;
   box-shadow: 3px 3px 15px gray;
   padding: 2rem;
   border-radius: 5px;
   margin: 1rem;
 }
+
 /*------------------CONTACTOS----------------------------*/
 .contactos {
   display: flex;
