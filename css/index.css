@@ -124,10 +124,7 @@ body {
   background-color: #2e3e60;
 }
 
-.section1,
-.section2,
-.section3,
-.section4 {
+.sections {
   display: flex;
   justify-content: center;
   width: 100%;
